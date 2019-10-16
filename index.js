@@ -10,12 +10,12 @@ class Formatter {
     let except=['the','a','an','but','of','and','for','at','by','from']
     let strs=sentence.split(' ')
     let result=[];
-   for ( let i = 0; i < strs.length; i++ ) {
-      if ( i === 0 ) {
-        result.push( this.capitalize( strs[ i ] ) )
+   for ( let i=0; i<strs.length;i++){
+      if (i === 0 ) {
+        result.push(this.capitalize( strs[ i ] ) )
       } else {
         if ( except.includes( strs[ i ] ) ) {
-          result.push( strs[ i ] )
+          result.push(strs[ i ] )
         } else {
           result.push( this.capitalize( strs[ i ] ) )
         }

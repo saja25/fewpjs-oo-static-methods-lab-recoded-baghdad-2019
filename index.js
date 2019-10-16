@@ -9,7 +9,6 @@ class Formatter {
   static titleize(sentence){
     let except=['the','a','an','but','of','and','for','at','by','from']
     let strs=sentence.split(' ')
-    if (str!==)
-    
+
   }
 }

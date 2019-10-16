@@ -11,16 +11,16 @@ class Formatter {
     let strs=sentence.split(' ')
     let result=[];
    for ( let i=0; i<strs.length;i++){
-      if (i === 0 ) {
-        result.push(this.capitalize( strs[ i ] ) )
-      } else {
-        if ( except.includes( strs[ i ] ) ) {
-          result.push(strs[ i ] )
-        } else {
-          result.push( this.capitalize( strs[ i ] ) )
+      if (i===0){
+        result.push(this.capitalize(strs[i]))
+      }else{
+        if (except.includes(strs[i])){
+          result.push(strs[i])
+        }else{
+          result.push(this.capitalize(strs[i]))
         }
       }
     }
-    return result.join( " " );
+    return result.join(" ");
   }
 }

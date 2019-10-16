@@ -9,6 +9,17 @@ class Formatter {
   static titleize(sentence){
     let except=['the','a','an','but','of','and','for','at','by','from']
     let strs=sentence.split(' ')
-
+for ( let i = 0; i < strs.length; i++ ) {
+      if ( i == 0 ) {
+        result.push( this.capitalize( strs[ i ] ) )
+      } else {
+        if ( except.includes( strs[ i ] ) ) {
+          result.push( strs[ i ] )
+        } else {
+          result.push( this.capitalize( strs[ i ] ) )
+        }
+      }
+    }
+    return result.join( " " );
   }
 }
